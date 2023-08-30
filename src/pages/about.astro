@@ -1,0 +1,59 @@
+---
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+import Header from "../components/Header.astro";
+
+---
+
+<DefaultLayout>
+  <header></header>
+  <main class="container">
+    <h1 class="text-center text-5xl md:text-left lg:text-7xl">
+      <span class="text-gradient">
+        Meet Omar Centeno
+      </span>
+    </h1>
+    <div class="margin">
+      <p class="text-xl">
+        I enjoy working in collaborative and multidisciplinary teams, where ideas form the foundation for building innovative products. If this resonates with you, feel free to reach out and let's exchange ideas.
+      </p>
+      <p class="text-xl">
+        Developing my career as QA Engineer.
+      </p>
+      <p class="text-xl">
+        Recently, I served as a Course Director at Platzi, a leading startup in the EDTech field in Latin America. In the second phase, I designed and developed courses and educational programs that impacted thousands of students worldwide. I focused on delivering innovative learning experiences that aligned with market demands and trends.
+      </p>
+      <p class="text-xl">
+        During my initial phase at Platzi, I held the role of QA Associate. It was here that I delved into the realm of software testing, identifying and resolving bugs within the application. Moreover, I enjoyed overseeing the quality control of course content, ensuring the delivery of top-notch products.
+      </p>
+      <p class="text-xl">
+        My passion for quality and success in software development propels me to seek fresh challenges in the field of quality assurance. Here, I aim to apply my skills in software testing, agile methodologies, and continuous delivery. I am dedicated to my professional growth, keeping myself amazed at what we can achieve and the impact we can collectively make.
+  
+        I would be delighted to share more about myself. I invite you to engage in a conversation.
+      </p>
+    </div>
+  </main>
+
+  <style lang="scss">
+    .text-gradient {
+      background: linear-gradient(315deg, var(--primary-200) 25%, var(--secondary-500));
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    :global(.darkmode .text-gradient) {
+      background: linear-gradient(315deg, var(--primary-200) 25%, var(--secondary-400));
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+
+</DefaultLayout>
+
+
+<style>
+  .margin {
+    margin-top: 1.5rem;
+  }
+</style>
